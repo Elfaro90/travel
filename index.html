@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Travel Blog</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        header {
+            background: linear-gradient(135deg, #22c1c3, #fdbb2d);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 48px;
+            letter-spacing: 2px;
+        }
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: #333;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease, background 0.3s ease;
+        }
+        nav a:hover {
+            background: #66bf95;
+            color: white;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        .hero {
+            background: url(dicover.jpg) no-repeat center center/cover;
+            height: 400px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .hero h2 {
+            z-index: 1;
+            font-size: 36px;
+            letter-spacing: 1px;
+        }
+        .blog-posts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .post {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .post:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            cursor: pointer;
+        }
+        .post img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .post-content {
+            padding: 15px;
+        }
+        .post-content h3 {
+            margin: 0 0 10px;
+            font-size: 20px;
+        }
+        .post-content p {
+            font-size: 14px;
+            color: #666;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        footer a {
+            color: #22c1c3;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Travel Diaries</h1>
+        <p>Explore the World Through Stories</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="hero">
+        <h2>Discover New Adventures</h2>
+    </div>
+    <div class="container">
+        <section id="home">
+            <h2>Featured Posts</h2>
+            <div class="blog-posts">
+                <div class="post">
+                    <img src="tokyo.jpg" alt="Post Image">
+                    <div class="post-content">
+                        <h3>Exploring the Streets of Tokyo</h3>
+                        <p>A journey through Japan's vibrant capital city, filled with culture and technology.</p>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="alps.jpg" alt="Post Image">
+                    <div class="post-content">
+                        <h3>Hiking in the Swiss Alps</h3>
+                        <p>Experience breathtaking views and serene landscapes in the heart of Europe.</p>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="safari.jpeg" alt="Post Image">
+                    <div class="post-content">
+                        <h3>Safari Adventures in Kenya</h3>
+                        <p>Witness the beauty of wildlife and nature in the African savannah.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2023 Travel Diaries. <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
